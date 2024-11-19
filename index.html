@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">RailYatra</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Book Ticket Section -->
+        <div class="form-container">
+            <h1>Book Your Ticket</h1>
+            <form>
+                <div class="form-field">
+                    <label for="from-station">From Station</label>
+                    <select id="from-station">
+                        <option value="">Select From Station</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="to-station">To Station</label>
+                    <select id="to-station">
+                        <option value="">Select To Station</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="date">Date Of Travel</label>
+                    <input type="date" id="date" />
+                </div>
+
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <!-- Safety Measures Button -->
+        <div class="safety-btn">
+            <button id="safety-button">Indian Railway Safety Measures</button>
+        </div>
+
+        <!-- Ask TT Button -->
+        <div class="chatbot">
+            <button id="chatbot-button">
+                <img src="tt-icon.png" alt="TT Icon" />
+                Ask TT
+            </button>
+            <div id="chatbox" class="chatbox">
+                <div class="chat-header">Chat with TT</div>
+                <div class="chat-body">
+                    <p class="chat-message bot">Hello! How can I help you?</p>
+                </div>
+                <div class="chat-footer">
+                    <input type="text" id="chat-input" placeholder="Type your message here..." />
+                    <button id="send-button">Send</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Safety Measures Modal -->
+    <div id="safety-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close-button">&times;</span>
+            <h2>Indian Railway Safety Measures</h2>
+            <div class="modal-slideshow"></div>
+            <ul>
+                <li>Do not board or deboard moving trains.</li>
+                <li>Stand behind the yellow line on platforms.</li>
+                <li>Use footbridges or subways to cross tracks.</li>
+                <li>Do not carry flammable items on trains.</li>
+                <li>Stay alert while using earphones near platforms.</li>
+                <li>Do not climb on goods wagons or locomotives.</li>
+                <li>Ensure children are supervised at all times.</li>
+                <li>Avoid overcrowding at station entry points.</li>
+            </ul>
+            <h3>Helpline Numbers:</h3>
+            <p>General: 139 | Emergency: 112 | Women Helpline: 182</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
